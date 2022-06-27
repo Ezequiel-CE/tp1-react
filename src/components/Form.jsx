@@ -60,7 +60,7 @@ const Form = ({ addPersona, personaToEdit, stopEdit, updatePersona }) => {
   }, [personaToEdit]);
 
   return (
-    <form className="bg-slate-50 p-5 rounded-lg flex flex-col gap-3 shadow-lg sm:w-11/12 md:md:max-w-lg mx-auto ">
+    <form className="bg-slate-50 p-5 rounded-lg flex flex-col gap-3 shadow-lg w-11/12 md:max-w-lg mx-auto ">
       <div>
         <label
           className="block text-gray-700 text-sm font-bold mb-2"
@@ -113,14 +113,14 @@ const Form = ({ addPersona, personaToEdit, stopEdit, updatePersona }) => {
         {personaToEdit ? (
           <>
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  "
+              className="bg-slate-300 hover:bg-slate-500 text-black font-bold py-2 px-4 rounded-full  "
               type="submit"
               onClick={onAcceptEditHandler}
             >
               Aceptar
             </button>
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  "
+              className="bg-slate-300 hover:bg-slate-500 text-black font-bold py-2 px-4 rounded-full  "
               type="submit"
               onClick={onCancelEditHandler}
             >
@@ -129,7 +129,7 @@ const Form = ({ addPersona, personaToEdit, stopEdit, updatePersona }) => {
           </>
         ) : (
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full border focus:!outline-1 focus:shadow-outline"
+            className="bg-slate-300 hover:bg-slate-500 text-black font-bold py-2 px-4 rounded-full border focus:outline-1 focus:shadow-outline"
             type="submit"
             onClick={addPersonaOnClick}
           >

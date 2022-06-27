@@ -13,7 +13,12 @@ const PersonaItem = ({ data, deletePersona, edit, personaToEdit }) => {
 
   return (
     <li className="bg-slate-300 p-5 w-full  rounded-lg flex justify-between items-center shadow-lg ">
-      <p className="text-black text-sm font-bold">{`${nombre} || ${apellido} || ${edad}`}</p>
+      <div>
+        <p className="text-black text-sm font-bold">{`Nombre: ${nombre}`}</p>
+        <p className="text-black text-sm font-bold">{`Apellido: ${apellido}`}</p>
+        <p className="text-black text-sm font-bold">{`Edad: ${edad}`}</p>
+      </div>
+
       <div className="flex gap-3">
         {!personaToEdit && (
           <>

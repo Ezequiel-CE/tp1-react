@@ -42,7 +42,10 @@ const App = () => {
   };
 
   return (
-    <div className="h-screen bg-cyan-400  pt-9">
+    <div className="min-h-screen bg-cyan-400  ">
+      <h1 className="text-center mb-12 font-bold leading-tight text-4xl bg-slate-50 p-6  shadow-lg md:text-5xl text-gray-700  ">
+        Libreta de Personas
+      </h1>
       <Form
         addPersona={addPersonaHandler}
         stopEdit={stopEditModeHandler}
