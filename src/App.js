@@ -5,7 +5,7 @@ import uniqid from "uniqid";
 
 const App = () => {
   const [personas, setPersonas] = useState([
-    { id: uniqid(), nombre: "Roman", apellido: "Riquelmes", edad: 44 },
+    { id: uniqid(), nombre: "Juan Roman", apellido: "Riquelmes", edad: 44 },
     { id: uniqid(), nombre: "Peter", apellido: "Parker", edad: 22 },
   ]);
 
